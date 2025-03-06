@@ -1,13 +1,25 @@
 # Footer language switcher
 
-This is some default content for the README. Change this to the appropriate
-content.
+This Drupal sdc_component is a very basic component that create a sticky footer with the language switcher and user user account menu
 
 ## Usage
 
-Here you should describe how/when to use this component. This information may be
-for developers or for editors, depending on the component type.
+Prerequisite:
+
+Drupal 10
+Tailwindcss Theme
+
+Install this component in a folder with the name [your_theme]/components
+Use this component in your twig template with:
+{{ include ('[your_theme]:footer_language_switcher') }}
+
+You have to set in the secondary menu region of your Drupal Theme these blocks
+- Advanced Language Selector
+- User Menu Account
+
+Set theme as you like
 
 ## Additional information
 
-Some extra info about the component.
+Dependecies:
+- drupal/advanced_language_selector
