@@ -1,0 +1,11 @@
+<div {{ attributes }}>
+  {# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
+  {% block example_block %}
+    <footer class="static mt-12 flex flex-row flex-nowrap justify-between items-center max-w-screen-xl mx-auto">
+      {#    <div>{{ page.header }}</div> #}
+      <div class="flex flex-nowrap">
+        {{ page.secondary_menu }}
+      </div>
+    </footer>
+  {% endblock %}
+</div>
